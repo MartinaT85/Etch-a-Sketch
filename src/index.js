@@ -73,6 +73,7 @@ const cleanCanvas = () => {
     "animationend",
     function () {
       canvas.classList.remove("shake");
+      window.location.reload();
     },
     { once: true }
   );
