@@ -10,12 +10,35 @@ body {
 
 canvas {
   border: 15px solid;
+  border-radius: 50px;
   border-image: linear-gradient(-90deg, rgb(255, 138, 0), rgb(229, 46, 113)) 1;
-  border-radius: 5px;
   /* Set the width and height to half the actual size so it doesn't look pixelated */
   width: 800px;
   height: 500px;
   background: #191919;
+}
+
+button {
+  background-image: linear-gradient(
+    -90deg,
+    rgb(255, 138, 0),
+    rgb(229, 46, 113)
+  );
+  padding: 3px;
+  border-radius: 4px;
+  position: relative;
+  display: inline-block;
+  border: none;
+  margin-top: 1rem;
+}
+
+span {
+  display: inline-block;
+  background: #191919;
+  color: #fff;
+  padding: 0.35rem 2.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
 }
 
 canvas.shake {
